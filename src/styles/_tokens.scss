@@ -1,0 +1,51 @@
+:root {
+  --font-primary: 'Poppins', sans-serif;
+
+  --color-background: #050505;
+  --color-surface: rgba(255, 255, 255, 0.05);
+  --color-text: #f7f7f8;
+  --color-text-muted: #C4C4C4;
+  --color-accent: #8f31ff;
+  --color-accent-soft: rgba(143, 49, 255, 0.12);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-shadow: rgba(0, 0, 0, 0.35);
+  --color-cyan: #0ecfff;
+
+  --container-max: 1560px;
+  --container-padding: 32px;
+
+  --radius-lg: 32px;
+  --radius-md: 20px;
+
+  --duration-fast: 220ms;
+  --duration-medium: 420ms;
+  --ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (max-width: 1279px) {
+  :root {
+    --container-padding: 24px;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --container-padding: 20px;
+    --radius-lg: 28px;
+    --radius-md: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --container-padding: 18px;
+    --radius-lg: 24px;
+    --radius-md: 16px;
+  }
+}
+
+@media (max-width: 479px) {
+  :root {
+    --container-padding: 14px;
+  }
+}
