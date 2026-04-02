@@ -61,8 +61,7 @@ function App() {
       )
       .from('.hero-section__title', { y: 42, opacity: 0, duration: 0.8 }, '-=0.18')
       .from('.hero-section__copy--lead', { y: 24, opacity: 0, duration: 0.55 }, '-=0.32')
-      .from('.hero-section__actions--primary', { y: 24, opacity: 0, duration: 0.5 }, '-=0.28')
-      .from('.trusted-strip', { y: 26, opacity: 0, duration: 0.7 }, '-=0.45');
+      .from('.hero-section__actions--primary', { y: 24, opacity: 0, duration: 0.5 }, '-=0.28');
 
     const revealItems = gsap.utils.toArray('[data-reveal]');
 
@@ -273,18 +272,6 @@ function App() {
         );
       },
     );
-
-    gsap.to('.trusted-strip__logo', {
-      opacity: 1,
-      y: 0,
-      duration: 0.5,
-      stagger: 0.06,
-      ease: 'power2.out',
-      scrollTrigger: {
-        trigger: '.trusted-strip',
-        start: 'top 85%',
-      },
-    });
 
     gsap.to('.button--hero-primary, .button--api-primary, .button--final-primary', {
       boxShadow: '0 0 0 1px rgba(255,255,255,0.08), 0 10px 44px rgba(122, 60, 255, 0.5)',

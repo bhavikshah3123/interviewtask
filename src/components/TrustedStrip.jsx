@@ -4,7 +4,7 @@ function TrustedStrip({ logos }) {
   return (
     <section className="trusted-strip-section" aria-label="Trusted partners">
       <div className="container">
-        <div className="trusted-strip" data-reveal>
+        <div className="trusted-strip">
           <p>Powering tools and integration for companies around the world</p>
           <div className="trusted-strip__slider">
             <div className="trusted-strip__track">

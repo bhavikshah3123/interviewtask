@@ -7,7 +7,7 @@ function WhySection({ items }) {
 
   return (
     <section className="why-section" id="why">
-      <div className="container">
+      <div className="why-section__inner">
         <div className="section-heading" data-reveal>
           <h2>
             Why <span className="gradient-text">UzoFin?</span>

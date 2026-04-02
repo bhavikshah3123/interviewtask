@@ -45,16 +45,9 @@ function MetricsSection({ onButtonClick }) {
         <img src={spiralLine} alt="" />
       </div>
       <div className="container">
-        <div className="metrics-section__grid">
+        <div className="metrics-section__top">
           <div className="metrics-section__intro" data-reveal>
-            <div>
-              <h2>Your Business Pays Are Now Faster and Secure.</h2>
-            </div>
-
-            <div className="metrics-section__headline">
-              <h3>Our Intelligent Financial Suite</h3>
-              <p>Tools that accelerate every step of your finance workflow.</p>
-            </div>
+            <h2>Your Business Pays Are Now Faster and Secure.</h2>
           </div>
 
           <div className="metrics-section__stats" data-reveal>
@@ -67,27 +60,23 @@ function MetricsSection({ onButtonClick }) {
           </div>
         </div>
 
-        <div className="metrics-section__cards">
-          {cards.map((card) => (
-            <article key={card.title} className="feature-card" data-reveal>
-              <div className="feature-card__accent" />
-              <h3>{card.title}</h3>
-              <p>{card.copy}</p>
-              <strong>{card.stat}</strong>
-              <span>{card.footer}</span>
-            </article>
-          ))}
-        </div>
+        <div className="metrics-section__bottom">
+          <div className="metrics-section__headline" data-reveal>
+            <h3>Our Intelligent Financial Suite</h3>
+            <p>Tools that accelerate every step of your financial workflow.</p>
+          </div>
 
-        <div className="metrics-section__cta" data-reveal>
-          <a
-            className="button button--outline"
-            href="#why"
-            onClick={() => onButtonClick({ frequency: 500 })}
-          >
-            Explore platform
-            <img src={arrowIcon} alt="" aria-hidden="true" />
-          </a>
+          <div className="metrics-section__cards">
+            {cards.map((card) => (
+              <article key={card.title} className="feature-card" data-reveal>
+                <div className="feature-card__accent" />
+                <h3>{card.title}</h3>
+                <p>{card.copy}</p>
+                <strong>{card.stat}</strong>
+                <span>{card.footer}</span>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </section>
